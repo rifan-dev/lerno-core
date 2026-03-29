@@ -66,6 +66,26 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
+            // Strict email validation
+            const emailField = form.querySelector('input[name="email"]');
+            const errorMsg = form.querySelector('.email-error-msg');
+            
+            if (emailField) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailField.value)) {
+                    if (errorMsg) {
+                        errorMsg.textContent = "Please enter a valid email address (e.g., name@gmail.com).";
+                        errorMsg.style.display = "block";
+                    }
+                    emailField.style.borderColor = "#ff4a4a";
+                    emailField.focus();
+                    return; // Stop the form from submitting
+                } else if (errorMsg) {
+                    errorMsg.style.display = "none";
+                    emailField.style.borderColor = "";
+                }
+            }
+
             const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.btn');
             const originalText = submitBtn.textContent;
 

@@ -370,7 +370,10 @@
                 <form id="contact-form" class="cta-form">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="tel" name="phone" placeholder="Phone Number" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
+                    <div style="display: flex; flex-direction: column; text-align: left; width: 100%;">
+                        <input type="email" name="email" placeholder="Email Address" required style="margin-bottom: 10px;">
+                        <span class="email-error-msg" style="color: #ff4a4a; font-size: 0.85rem; display: none; padding-left: 15px; margin-top: -5px; margin-bottom: 5px;"></span>
+                    </div>
                     <button type="submit" class="btn btn-primary btn-lg">Start Your Journey Today</button>
                 </form>
             </div>
