@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // These IDs need to be replaced with your actual EmailJS Service ID and Template ID
             const serviceID = "service_9c1da4b";
             const templateID = "template_qkr38nc";
-            const scriptURL = "https://script.google.com/macros/s/AKfycbzJRaNOd3CzARlhh1bQf9vRod1R02K-FgIABW31Io4GdSzG8hnKuidzSi1n_g9jVGRnGA/exec";
+            const scriptURL = "https://script.google.com/macros/s/AKfycbxPs75VDI1EvvgR2CwaUyGprtp1wgFVfXJrJS4E9AzNU7bX2i3QH3JQ6bGS5zRthq-Pkw/exec";
 
             try {
                 // Run both EmailJS and Google Sheets fetch at the same time
