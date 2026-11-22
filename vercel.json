@@ -1,0 +1,14 @@
+
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/event-pass",
+      "destination": "https://event-pass-nii9.vercel.app/"
+    },
+    {
+      "source": "/event-management/:path*",
+      "destination": "https://event-pass-nii9.vercel.app/:path*"
+    }
+  ]
+}
