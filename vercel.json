@@ -7,7 +7,7 @@
       "destination": "https://event-pass-nii9.vercel.app/"
     },
     {
-      "source": "/event-management/:path*",
+      "source": "/event-pass/:path*",
       "destination": "https://event-pass-nii9.vercel.app/:path*"
     }
   ]
